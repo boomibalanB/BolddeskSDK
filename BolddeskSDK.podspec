@@ -13,9 +13,9 @@ s.source           = { :git => 'https://github.com/boomibalanB/BolddeskSDK.git',
 s.prepare_command = <<-CMD
     unzip -o BolddeskCommonUI.xcframework.zip
   CMD
-s.vendored_frameworks = 'Frameworks/BolddeskCommonUI.xcframework',
-                        'Frameworks/BolddeskPlugin.xcframework',
-                        'Frameworks/BolddeskSDKFramework.xcframework'
+s.vendored_frameworks = 'Flutter.xcframework',
+                        'FlutterPluginRegistrant.xcframework',
+                        'BolddeskSDKFramework.xcframework'
 s.ios.deployment_target = '12.0'
 s.static_framework = true
 end
