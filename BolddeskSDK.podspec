@@ -11,7 +11,7 @@ s.author           = { 'Boomibalan B' => 'boomibalan.b@syncfusion.com' }
 s.source           = { :git => 'https://github.com/boomibalanB/BolddeskSDK.git', :tag => s.version.to_s }
 # Download and extract frameworks at install time
 s.prepare_command = <<-CMD
-    unzip -o BolddeskCommonUI.xcframework.zip
+    unzip -o Flutter.xcframework.zip
   CMD
 s.vendored_frameworks = 'Flutter.xcframework',
                         'FlutterPluginRegistrant.xcframework',
