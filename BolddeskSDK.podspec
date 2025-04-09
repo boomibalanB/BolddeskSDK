@@ -9,6 +9,11 @@ s.homepage         = 'https://github.com/boomibalanB/BolddeskSDK.git'
 s.license = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'Boomibalan B' => 'boomibalan.b@syncfusion.com' }
 s.source           = { :git => 'https://github.com/boomibalanB/BolddeskSDK.git', :tag => s.version.to_s }
+# Download and extract frameworks at install time
+s.prepare_command = <<-CMD
+curl -L -o AppFramework.zip https://github.com/boomibalanB/CounterFlutterSDK/blob/0.0.2/Flutter.xcframework.zip
+unzip Flutter.xcframework.zip
+CMD
 s.vendored_frameworks = 'BolddeskSDK.xcframework'
 s.ios.deployment_target = '12.0'
 s.static_framework = true
